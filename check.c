@@ -6,7 +6,7 @@
 int
 main(void)
 {
-	if (open("tempfile", O_RDWR) < 0)
+	if (open("temp_dir", O_RDWR) < 0)
 		exit(0);
 
 	printf("file opened\n");
