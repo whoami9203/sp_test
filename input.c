@@ -18,12 +18,15 @@ int main(int argc, char const *argv[])
 	char buf[50];
 
 	fd = open(path, O_WRONLY|O_NONBLOCK);
-	scanf("%d", &num);
-	sprintf(buf, "%d", num);
+	
+	while(scanf("%d", &num) != EOF){
+		sprintf(buf, "%d", num);
 
-	write(fd, buf, strlen(buf));
+		write(fd, buf, strlen(buf));
 
-	sleep(3);
+		sleep(1);
+	}
+	
 
 	return 0;
 }
