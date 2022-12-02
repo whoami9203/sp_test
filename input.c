@@ -23,7 +23,7 @@ int main(int argc, char const *argv[])
 	
 	for(int i=0; i<MAX; i++){
 
-		printf("buf: %s, %d", buf[i], strlen(buf[i]));
+		printf("buf: %s, lenth: %d\n", buf[i], strlen(buf[i]));
 		//write(fd, buf, strlen(buf[i]));
 
 		sleep(2);
