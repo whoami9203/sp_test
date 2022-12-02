@@ -19,12 +19,12 @@ int main(int argc, char const *argv[])
 	int num;
 	char buf[MAX][50] = {"1111\n", "   1\n", " 123\n"};
 
-	fd = open(path, O_WRONLY|O_NONBLOCK);
+	//fd = open(path, O_WRONLY|O_NONBLOCK);
 	
 	for(int i=0; i<MAX; i++){
 
-		printf("buf: %s", buf[i]);
-		write(fd, buf, strlen(buf));
+		printf("buf: %s, %d", buf[i], strlen(buf[i]));
+		//write(fd, buf, strlen(buf[i]));
 
 		sleep(2);
 	}
