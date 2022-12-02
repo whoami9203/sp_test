@@ -19,8 +19,8 @@ int main(int argc, char const *argv[])
 {
 	char path1[] = "2_max_subarray";
 	char path2[] = "3_max_subarray";
-	char buf1[MAX][50] = {"   2\n   4\n  -3\n", "  -2\n", "  10\n"};
-	char buf1[MAX][50] = {"   13\n  -5\n  -7\n", "   9\n", "   8\n", "  -1\n"};
+	char buf1[MAX1][50] = {"   2\n   4\n  -3\n", "  -2\n", "  10\n"};
+	char buf2[MAX2][50] = {"   13\n  -5\n  -7\n", "   9\n", "   8\n", "  -1\n"};
 	int fd1, fd2;
 	pid_t pid1, pid2;	
 
