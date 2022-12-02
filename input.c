@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
 	for(int i=0; i<MAX; i++){
 
 		printf("buf: %s\n", buf[i]);
-		write(fd, buf, count);
+		write(fd, buf[i], strlen(buf[i]));
 
 		sleep(3);
 	}
