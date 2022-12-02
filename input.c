@@ -18,7 +18,7 @@ int main(int argc, char const *argv[])
 	char path[] = "2_max_subarray";
 	int fd;
 	int num;
-	char buf[MAX][50] = {"   2\n   4\n", "  -3\n"};
+	char buf[MAX][50] = {"   2\n   4\n  -3\n"};
 
 	fd = open(path, O_WRONLY|O_NONBLOCK);
 	
