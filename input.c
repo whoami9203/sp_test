@@ -10,7 +10,7 @@
 #include <sys/types.h>
 #include <sys/signal.h>
 
-#define MAX 2
+#define MAX 1
 #define count 5
 
 int main(int argc, char const *argv[])
