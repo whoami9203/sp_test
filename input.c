@@ -19,9 +19,9 @@ int main(int argc, char const *argv[])
 
 	fd = open(path, O_WRONLY|O_NONBLOCK);
 	
-	while(scanf("%d", &num) != EOF){
-		sprintf(buf, "%d", num);
+	while(gets(buf) != NULL){
 
+		printf("buf: %s\n", buf);
 		write(fd, buf, strlen(buf));
 
 		sleep(1);
