@@ -10,7 +10,7 @@
 #include <sys/types.h>
 #include <sys/signal.h>
 
-#define MAX 1
+#define MAX 2
 #define count 5
 
 int main(int argc, char const *argv[])
@@ -18,7 +18,7 @@ int main(int argc, char const *argv[])
 	char path[] = "2_max_subarray";
 	int fd;
 	int num;
-	char buf[MAX][50] = {"   2\n   4\n  -3\n"};
+	char buf[MAX][50] = {"   2\n   4\n  -3\n", " 197\n"};
 
 	fd = open(path, O_WRONLY|O_NONBLOCK);
 	
@@ -27,7 +27,7 @@ int main(int argc, char const *argv[])
 		printf("buf: %s\n", buf[i]);
 		write(fd, buf[i], strlen(buf[i]));
 
-		sleep(3);
+		sleep(11);
 	}
 	
 
